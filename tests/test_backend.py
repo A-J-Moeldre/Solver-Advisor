@@ -2,7 +2,7 @@ import numpy as np
 from scipy.sparse import csr_matrix
 
 # Change this import to match your backend filename
-from SolverAdvisorTryII import is_symmetric, is_spd
+from solver_advisor.diagnostics import is_symmetric, is_spd
 
 
 def test_symmetric_matrix():
