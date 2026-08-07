@@ -31,51 +31,9 @@ GUI interface (Tkinter)
 
 SuiteSparse matrix downloader (Python script)
 
-Project Structure
-Kood
-solver-advisor/
-│
-├── solver_advisor/
-│   ├── io.py               # Matrix loading utilities
-│   ├── analysis.py         # Symmetry, SPD, block detection
-│   ├── spectrum.py         # Eigenvalue & Lanczos routines
-│   ├── diagnostics.py      # Solver & preconditioner logic
-│   ├── run.py              # High-level execution wrapper
-│
-├── gui/
-│   ├── app.py              # Tkinter GUI
-│
-├── cli/
-│   ├── main.py             # CLI entry point
-│
-├── matrices/               # Downloaded matrices
-│
-├── tools/
-│   ├── download_matrices.py # SuiteSparse downloader
-│
-├── tests/
-│   ├── test_symmetry.py
-│   ├── test_spd.py
-│
-└── README.md
 Installation
 Clone the repository:
 
-Kood
-git clone https://github.com/<your-username>/solver-advisor
-cd solver-advisor
-Install in editable mode:
-
-Kood
-pip install -e .
-This makes the solver-advisor CLI command available system‑wide.
-
-Usage
-CLI
-Analyze a matrix directly from the terminal:
-
-Kood
-solver-advisor matrices/example.mtx
 Example output:
 
 Kood
@@ -101,34 +59,8 @@ View solver recommendations
 
 Inspect eigenvalues, condition number, SPD status, block structure, etc.
 
-Downloading Matrices (SuiteSparse)
-Use the provided script to download real-world sparse matrices:
-
-Kood
-python tools/download_matrices.py
-This downloads and extracts matrices from the SuiteSparse Matrix Collection into the matrices/ directory.
-
-Example Matrix
-You can generate a small example matrix:
-
-python
-from solver_advisor.io import create_example_matrix
-create_example_matrix()
-This creates matrices/example.mtx.
-
 Requirements
-Python 3.10+
-
-NumPy
-
-SciPy
-
-ssgetpy
-
-Tkinter (included with most Python installations)
-
-License
-MIT License (or whichever you choose)
+Python 3.10+, NumPy, SciPy, ssgetpy, Tkinter (included with most Python installations)
 
 Author
 Allar‑Joel Möldre  
