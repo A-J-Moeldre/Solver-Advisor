@@ -1,0 +1,2 @@
+[console_scripts]
+solver-advisor = cli.main:main

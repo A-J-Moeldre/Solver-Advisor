@@ -1,0 +1,75 @@
+<svg width="512" height="512" viewBox="0 0 512 512"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="#0B3D2E"/>
+
+  <!-- Shield outline -->
+  <path
+    d="M256 80
+       C220 95 185 100 150 100
+       C150 210 170 310 256 380
+       C342 310 362 210 362 100
+       C327 100 292 95 256 80 Z"
+    fill="#0B3D2E"
+    stroke="#C0C0C0"
+    stroke-width="8"
+  />
+
+  <!-- Block matrix grid inside shield -->
+  <!-- Grid area roughly centered -->
+  <g transform="translate(176,170)">
+    <!-- Cell size and spacing -->
+    <!-- Row 0 -->
+    <rect x="0"   y="0"   width="32" height="32" fill="#1B5E20"/>
+    <rect x="40"  y="0"   width="32" height="32" fill="#1B5E20"/>
+    <rect x="80"  y="0"   width="32" height="32" fill="#0B3D2E" stroke="#1B5E20" stroke-width="2"/>
+    <rect x="120" y="0"   width="32" height="32" fill="#0B3D2E" stroke="#1B5E20" stroke-width="2"/>
+
+    <!-- Row 1 -->
+    <rect x="0"   y="40"  width="32" height="32" fill="#1B5E20"/>
+    <rect x="40"  y="40"  width="32" height="32" fill="#AEEA00"/> <!-- lime diagonal block -->
+    <rect x="80"  y="40"  width="32" height="32" fill="#1B5E20"/>
+    <rect x="120" y="40"  width="32" height="32" fill="#0B3D2E" stroke="#1B5E20" stroke-width="2"/>
+
+    <!-- Row 2 -->
+    <rect x="0"   y="80"  width="32" height="32" fill="#0B3D2E" stroke="#1B5E20" stroke-width="2"/>
+    <rect x="40"  y="80"  width="32" height="32" fill="#1B5E20"/>
+    <rect x="80"  y="80"  width="32" height="32" fill="#1B5E20"/>
+    <rect x="120" y="80"  width="32" height="32" fill="#1B5E20"/>
+
+    <!-- Row 3 -->
+    <rect x="0"   y="120" width="32" height="32" fill="#0B3D2E" stroke="#1B5E20" stroke-width="2"/>
+    <rect x="40"  y="120" width="32" height="32" fill="#0B3D2E" stroke="#1B5E20" stroke-width="2"/>
+    <rect x="80"  y="120" width="32" height="32" fill="#1B5E20"/>
+    <rect x="120" y="120" width="32" height="32" fill="#1B5E20"/>
+  </g>
+
+  <!-- Spectral arc above grid -->
+  <path
+    d="M196 160
+       Q256 130 316 160"
+    fill="none"
+    stroke="#AEEA00"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+
+  <!-- Title text -->
+  <text x="256" y="440"
+        text-anchor="middle"
+        font-family="IBM Plex Sans, Arial, sans-serif"
+        font-size="32"
+        fill="#C0C0C0">
+    Solver Advisor
+  </text>
+
+  <!-- Subtitle text -->
+  <text x="256" y="472"
+        text-anchor="middle"
+        font-family="IBM Plex Sans, Arial, sans-serif"
+        font-size="16"
+        fill="#1B5E20">
+    Matrix Diagnostics & Solver Intelligence
+  </text>
+</svg>

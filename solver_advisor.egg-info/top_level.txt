@@ -1,0 +1,5 @@
+GUI
+cli
+dist
+logo
+solver_advisor
