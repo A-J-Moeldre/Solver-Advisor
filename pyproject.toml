@@ -29,7 +29,3 @@ solver-advisor = "cli.main:main"
 [tool.setuptools]
 include-package-data = true
 packages = ["solver_advisor"]
-
-[tool.setuptools.packages.find]
-where = ["."]
-exclude = ["tests*", "tools*"]
