@@ -19,18 +19,16 @@ dependencies = [
     "ssgetpy",
 ]
 
-# Optional: include GUI dependencies only if needed
-# "tk" is usually bundled with Python, so we do NOT list it here.
-
 [project.urls]
-Homepage = "https://github.com/<your-username>/solver-advisor"
-Repository = "https://github.com/<your-username>/solver-advisor"
+Homepage = "https://github.com/A-J-Moeldre/solver-advisor"
+Repository = "https://github.com/A-J-Moeldre/solver-advisor"
 
 [project.scripts]
 solver-advisor = "cli.main:main"
 
 [tool.setuptools]
 include-package-data = true
+packages = ["solver_advisor"]
 
 [tool.setuptools.packages.find]
 where = ["."]
