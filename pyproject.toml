@@ -2,6 +2,7 @@
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
+[project]
 name = "solver-advisor"
 version = "0.2.0"
 description = "AI-powered matrix diagnostics and solver recommendations for scientific computing."
@@ -19,8 +20,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/A-J-Moeldre/solver-advisor"
-Repository = "https://github.com/A-J-Moeldre/solver-advisor"
+Homepage = "https://github.com/A-J-Moeldre/Solver-Advisor"
+Repository = "https://github.com/A-J-Moeldre/Solver-Advisor"
 
 [project.scripts]
 solver-advisor = "cli.main:main"
