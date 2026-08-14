@@ -10,30 +10,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          path: ""
+          path: .
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install build tools
-        run: |
-          python -m pip install --upgrade pip
-          pip install build twine
-
-      - name: Move project files to workspace root
-        run: mv Solver-Advisor/* .
-
       - name: Clean old builds
         run: rm -rf dist
 
       - name: Build package
-        working-directory: Solver-Advisor
+        working-directory: .
         run: python -m build
 
       - name: Publish to PyPI
