@@ -26,9 +26,11 @@ jobs:
           pip install build twine
 
       - name: Clean old builds
+        working-directory: Solver-Advisor
         run: rm -rf dist
 
       - name: Build package
+        working-directory: Solver-Advisor
         run: python -m build
 
       - name: Publish to PyPI
